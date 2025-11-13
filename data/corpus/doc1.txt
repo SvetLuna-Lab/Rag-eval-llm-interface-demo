@@ -1,0 +1,2 @@
+The RAG approach combines information retrieval with generation.
+Retrieval can be BM25 or dense embeddings; grounding answers in sources reduces hallucinations.
