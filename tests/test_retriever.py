@@ -11,11 +11,11 @@ class TestRetriever(unittest.TestCase):
         r = SimpleBM25Retriever(self.corpus_dir)
         results = r.retrieve("What is retrieval and generation?", top_k=2)
         self.assertEqual(len(results), 2)
-        # BM25-намеки: doc1 должен быть выше по запросу про RAG/grounding
+        # BM25 intuition: doc1 should rank higher for a query about RAG/grounding
         self.assertEqual(results[0][0].doc_id, "doc1.txt")
 
     def test_retrieve_empty_query(self):
         r = SimpleBM25Retriever(self.corpus_dir)
         results = r.retrieve("", top_k=3)
-        # Возвращаем top_k, но с нулевыми баллами (при пустом запросе)
+        # Return up to top_k items, but scores should be zero for an empty query
         self.assertLessEqual(len(results), 3)
