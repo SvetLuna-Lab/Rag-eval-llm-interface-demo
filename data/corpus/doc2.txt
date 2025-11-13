@@ -1,0 +1,2 @@
+Evaluation of RAG answers can track keyword coverage and overlap with supporting context.
+A simple combined score averages coverage and overlap.
