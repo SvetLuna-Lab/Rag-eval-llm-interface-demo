@@ -1,0 +1,14 @@
+[
+  {
+    "id": "q1",
+    "question": "What is RAG and why does grounding help?",
+    "expected_keywords": ["retrieval", "generation", "grounding", "hallucinations"],
+    "must_be_grounded_in": ["doc1.txt"]
+  },
+  {
+    "id": "q2",
+    "question": "Name two simple RAG answer metrics mentioned here.",
+    "expected_keywords": ["keyword coverage", "overlap"],
+    "must_be_grounded_in": ["doc2.txt"]
+  }
+]
