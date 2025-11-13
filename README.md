@@ -8,6 +8,7 @@ Pure-Python BM25-like retrieval, simple answer metrics (**keyword coverage**, **
 > Requires **Python 3.10+**. Pure-Python demo (no external deps).
 
 
+
 ## Repository structure
 
 ```text
@@ -112,6 +113,7 @@ pipe = RagPipeline(corpus_dir="data/corpus", llm=MyLLMClient())
 answer, contexts = pipe.run("What is RAG?")
 
 
+Console output
 
 === RAG eval with pluggable LLM client ===
 q1: score=0.750 (coverage=0.750, overlap=0.750)
